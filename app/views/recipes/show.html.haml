@@ -6,6 +6,8 @@
 			#recipe_info
 				%h1= @recipe.title
 				%p= @recipe.description
+				%span.text-muted Submitted by:
+				%span.text-muted= @recipe.user.email
 
 	.row
 		.col-md-6
